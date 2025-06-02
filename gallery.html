@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gallery - enzArts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Explore and purchase artwork from enzArts's diverse collection.">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container page-width">
+            <a href="home.html" class="logo-link" alt="enzArts Logo">enz<span>arts</span></a>
+            <nav id="main-nav">
+                <ul class="nav-pages">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   <li id="search-icon-container">
+    <img src="search.png" alt="Search" id="search-icon" style="width: 24px; height: 24px; cursor:pointer;">
+</li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-trigger">
+                <img src="search.png" alt="Search" id="mobile-search-icon-trigger">
+                <img src="menu.png" alt="Menu" id="hamburger-icon">
+            </div>
+        </div>
+        <div id="search-bar-container" class="search-bar-hidden">
+            <input type="search" id="site-search-input" placeholder="Search Kenz Arts...">
+            <button id="close-search-btn">X</button>
+        </div>
+    </header>
+
+    <main class="page-width">
+        <section class="gallery-intro-section">
+            <h1>Our Collection</h1>
+            <p>Browse our curated selection of fine art. Use the filters to find your perfect piece.</p>
+
+            <div class="filter-sort-controls">
+                <div class="filter-group">
+                    <label for="filter-artist">Artist:</label>
+                    <select id="filter-artist" aria-label="Filter by artist">
+                        <option value="">All Artists</option>
+                        <option value="artist1">Artist Name 1</option>
+                        <option value="artist2">Artist Name 2</option>
+                        <option value="artist3">Artist Name 3</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-style">Style:</label>
+                    <select id="filter-style" aria-label="Filter by style">
+                        <option value="">All Styles</option>
+                        <option value="abstract">Abstract</option>
+                        <option value="realism">Realism</option>
+                        <option value="impressionism">Impressionism</option>
+                        <option value="modern">Modern</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                     <label for="sort-price">Sort:</label>
+                    <select id="sort-price" aria-label="Sort by price">
+                        <option value="default">Default</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-artworks">
+            <div class="art-grid">
+                <div class="art-card" data-artist="artist1" data-style="abstract" data-price="500" data-id="art001"
+                     data-description="A vibrant exploration of color and form, evoking a sense of dynamic energy. This piece invites viewers to interpret its meaning through their own lens."
+                     data-specs='{"medium": "Oil on Canvas", "dimensions": "24\" x 36\"", "year": "2023"}'
+                     data-other-images='["https://images.pexels.com/photos/3095769/pexels-photo-3095769.jpeg?auto=compress&cs=tinysrgb&w=200", "https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg?auto=compress&cs=tinysrgb&w=200"]'>
+                    <img src="https://images.pexels.com/photos/3095769/pexels-photo-3095769.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vibrant Abstraction">
+                    <div class="art-card-info">
+                        <h3>Vibrant Abstraction</h3>
+                        <p class="artist-name">By Artist Name 1</p>
+                        <p class="art-price">$500</p>
+                    </div>
+                    <button class="cta-button view-details-btn">View Details</button>
+                </div>
+
+                <div class="art-card" data-artist="artist2" data-style="realism" data-price="850" data-id="art002"
+                     data-description="Capturing the serene beauty of a city at dusk, this piece highlights the interplay of light and shadow."
+                     data-specs='{"medium": "Acrylic on Panel", "dimensions": "30\" x 40\"", "year": "2022"}'
+                     data-other-images='["https://images.pexels.com/photos/4874507/pexels-photo-4874507.jpeg?auto=compress&cs=tinysrgb&w=200"]'>
+                    <img src="https://images.pexels.com/photos/4874507/pexels-photo-4874507.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cityscape Serenity">
+                    <div class="art-card-info">
+                        <h3>Cityscape Serenity</h3>
+                        <p class="artist-name">By Artist Name 2</p>
+                        <p class="art-price">$850</p>
+                    </div>
+                    <button class="cta-button view-details-btn">View Details</button>
+                </div>
+                <div class="art-card" data-artist="artist1" data-style="impressionism" data-price="1200" data-id="art003"
+                     data-description="An impressionistic take on a sunset horizon, full of light and atmosphere."
+                     data-specs='{"medium": "Oil on Canvas", "dimensions": "22\" x 28\"", "year": "2023"}'
+                     data-other-images='["https://images.pexels.com/photos/7565553/pexels-photo-7565553.jpeg?auto=compress&cs=tinysrgb&w=200"]'>
+                    <img src="https://images.pexels.com/photos/7565553/pexels-photo-7565553.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sunset Horizon">
+                    <div class="art-card-info">
+                        <h3>Sunset Horizon</h3>
+                        <p class="artist-name">By Artist Name 1</p>
+                        <p class="art-price">$1200</p>
+                    </div>
+                    <button class="cta-button view-details-btn">View Details</button>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page-width">
+            <p>&copy; <span id="currentYearGallery"></span> enzArts. All Rights Reserved.</p>
+            <p>kenzartgallery.com</p>
+        </div>
+    </footer>
+
+    <div id="artDetailModal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="close-modal-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-artwork-layout">
+                <div class="modal-art-images">
+                    <img src="" alt="Artwork Detail" id="modalMainImage">
+                    <div class="modal-thumbnails" id="modalThumbnails">
+                        </div>
+                </div>
+                <div class="modal-art-info">
+                    <h2 id="modalArtTitle"></h2>
+                    <p id="modalArtArtist"></p>
+                    <p id="modalArtPrice"></p>
+                    <div id="modalArtSpecs">
+                        <p><strong>Medium:</strong> <span id="specMedium"></span></p>
+                        <p><strong>Dimensions:</strong> <span id="specDimensions"></span></p>
+                        <p><strong>Year:</strong> <span id="specYear"></span></p>
+                    </div>
+                    <p id="modalArtDescription"></p>
+                    <div class="interactions-section">
+                        <h4>Interactions</h4>
+                        <div class="like-dislike-buttons">
+                            <button id="likeBtn" class="interaction-btn"><img src="images/like-icon.svg" alt="Like"> (<span id="likeCount">0</span>)</button>
+                            <button id="dislikeBtn" class="interaction-btn"><img src="images/dislike-icon.svg" alt="Dislike"> (<span id="dislikeCount">0</span>)</button>
+                        </div>
+                        <h4>Comments (<span id="commentCount">0</span>)</h4>
+                        <div id="commentsDisplay" class="comments-display-area">
+                            </div>
+                        <div class="add-comment-area">
+                            <textarea id="newCommentText" placeholder="Add your comment..." rows="3"></textarea>
+                            <button id="postCommentBtn" class="cta-button-secondary">Post Comment</button>
+                        </div>
+                    </div>
+                    <button id="orderNowBtnModal" class="cta-button">Inquire / Order Piece</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/YOURPHONENUMBER?text=Hello%20Kenz%20Art%20Gallery!" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <img src="images/whatsapp-icon.svg" alt="WhatsApp">
+    </a>
+
+    <script src='js/script.js'></script>
+</body>
+</html>

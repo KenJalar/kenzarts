@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>My Profile - enzArts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Manage your artist profile and portfolio at enzArts.">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container page-width">
+            <a href="home.html" class="logo-link" alt="enzArts Logo">enz<span>arts</span></a>
+            <nav id="main-nav">
+                <ul class="nav-pages">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   <li id="search-icon-container">
+    <img src="search.png" alt="Search" id="search-icon" style="width: 24px; height: 24px; cursor:pointer;">
+</li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-trigger">
+                <img src="search.png" alt="Search" id="mobile-search-icon-trigger">
+                <img src="menu.png" alt="Menu" id="hamburger-icon">
+            </div>
+        </div>
+        <div id="search-bar-container" class="search-bar-hidden">
+            <input type="search" id="site-search-input" placeholder="Search Kenz Arts...">
+            <button id="close-search-btn">X</button>
+        </div>
+    </header>
+
+    <main class="page-width">
+        <section class="profile-section">
+            <h1>My Artist Profile</h1>
+            <p class="subtle-text">This page is a placeholder for where authenticated artists can edit their details and manage their artworks. Full functionality requires backend development.</p>
+
+            <div class="profile-management-area">
+                <h2>Edit Your Details</h2>
+                <form id="editProfileForm" class="standard-form">
+                    <div class="form-group">
+                        <label for="profileFullName">Full Name:</label>
+                        <input type="text" id="profileFullName" name="fullName" value="Artist Name (from DB)">
+                    </div>
+                    <div class="form-group">
+                        <label for="profileEmail">Email:</label>
+                        <input type="email" id="profileEmail" name="email" value="artist@example.com (from DB)" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="profileCountry">Country:</label>
+                        <input type="text" id="profileCountry" name="country" value="Country (from DB)">
+                    </div>
+                    <div class="form-group">
+                        <label for="profileBio">Bio/Artist Statement:</label>
+                        <textarea id="profileBio" name="bio" rows="6">Bio content (from DB)</textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Save Profile Changes</button>
+                    <p id="editProfileStatus" class="form-status-message"></p>
+                </form>
+
+                <h2 class="section-spacing-top">Manage Your Artworks</h2>
+                <div id="artistArtworksList">
+                    <div class="artist-artwork-item">
+                        <img src="https://images.pexels.com/photos/3095769/pexels-photo-3095769.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Artwork thumbnail">
+                        <span>Vibrant Abstraction</span>
+                        <span>Status: Live</span>
+                        <button class="cta-button-secondary small-btn">Edit</button>
+                        <button class="cta-button-warning small-btn">Remove</button>
+                    </div>
+                </div>
+                <button id="addNewArtworkBtn" class="cta-button section-spacing-top">Add New Artwork</button>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page-width">
+            <p>&copy; <span id="currentYearProfile"></span> enzArts. All Rights Reserved.</p>
+            <p>kenzartgallery.com</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/YOURPHONENUMBER?text=Hello%20Kenz%20Art%20Gallery!" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <img src="images/whatsapp-icon.svg" alt="WhatsApp">
+    </a>
+    <script src='js/script.js'></script>
+    </body>
+</html>

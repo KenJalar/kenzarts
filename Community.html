@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Artist Community - enzArts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Meet the talented artists featured at enzArts. Learn about their work and how to join our community.">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container page-width">
+            <a href="home.html" class="logo-link" alt="enzArts Logo">enz<span>arts</span></a>
+            <nav id="main-nav">
+                <ul class="nav-pages">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="community.html" class="active">Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="search-icon-container">
+    <img src="search.png" alt="Search" id="search-icon" style="width: 24px; height: 24px; cursor:pointer;">
+</li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-trigger">
+                <img src="search.png" alt="Search" id="mobile-search-icon-trigger">
+                <img src="menu.png" alt="Menu" id="hamburger-icon">
+            </div>
+        </div>
+        <div id="search-bar-container" class="search-bar-hidden">
+            <input type="search" id="site-search-input" placeholder="Search Kenz Arts...">
+            <button id="close-search-btn">X</button>
+        </div>
+    </header>
+
+    <main class="page-width">
+        <section class="community-intro-section">
+            <h1>Our Artist Community</h1>
+            <p>enzArts is proud to support a diverse and talented community of artists. Explore their profiles, discover their unique styles, and connect with their work. Our artists are the heartbeat of our gallery.</p>
+        </section>
+
+        <section class="artist-listing-section">
+            <h2>Featured Artists</h2>
+            <div class="artist-grid-community">
+                <div class="artist-profile-card" id="artist-kendrick-jalar" data-artist-id="artist001">
+                    <img src="toon.png" alt="Kendrick Jalar">
+                    <div class="artist-info">
+                        <h3>Kendrick Jalar</h3>
+                        <p class="artist-specialty">Abstract & Mixed Media</p>
+                        <p class="artist-bio-summary">Kendrick explores the intersection of color and emotion, creating vibrant pieces that speak to the soul. Based in Kampala, Uganda.</p>
+                        <a href="gallery.html?artist=kendrickjalar" class="link-styled">View Artworks</a>
+                        </div>
+                </div>
+                <div class="artist-profile-card" id="artist-brian-yawe" data-artist-id="artist002">
+                    <img src="images/artist_profile_placeholder_2.png" alt="Brian Yawe"> <div class="artist-info">
+                        <h3>Brian Yawe</h3>
+                        <p class="artist-specialty">Figurative Sculpture</p>
+                        <p class="artist-bio-summary">Brian's sculptures capture the human form with grace and power, often reflecting stories from his heritage. From Nairobi, Kenya.</p>
+                        <a href="gallery.html?artist=brianyawe" class="link-styled">View Artworks</a>
+                    </div>
+                </div>
+                <div class="artist-profile-card" id="artist-amina-k" data-artist-id="artist003">
+                    <img src="images/artist_profile_placeholder_3.png" alt="Amina K."> <div class="artist-info">
+                        <h3>Amina K.</h3>
+                        <p class="artist-specialty">Impressionistic Landscapes</p>
+                        <p class="artist-bio-summary">Amina paints breathtaking landscapes that transport viewers to serene natural settings. Lives and works in Cape Town, South Africa.</p>
+                        <a href="gallery.html?artist=aminak" class="link-styled">View Artworks</a>
+                    </div>
+                </div>
+
+                <div class="artist-profile-card" id="artist-samuel-o" data-artist-id="artist004">
+                    <img src="images/artist_profile_placeholder_4.png" alt="Samuel O."> <div class="artist-info">
+                        <h3>Samuel O.</h3>
+                        <p class="artist-specialty">Digital Art & Surrealism</p>
+                        <p class="artist-bio-summary">Samuel crafts dreamlike digital worlds that challenge perception and explore modern themes. Lagos, Nigeria.</p>
+                        <a href="gallery.html?artist=samuelo" class="link-styled">View Artworks</a>
+                    </div>
+                </div>
+                <div class="artist-profile-card" id="artist-fatima-b" data-artist-id="artist005">
+                    <img src="images/artist_profile_placeholder_5.png" alt="Fatima B."> <div class="artist-info">
+                        <h3>Fatima B.</h3>
+                        <p class="artist-specialty">Textile Art</p>
+                        <p class="artist-bio-summary">Fatima weaves intricate narratives into her textile pieces, blending traditional techniques with contemporary design. Accra, Ghana.</p>
+                        <a href="gallery.html?artist=fatimab" class="link-styled">View Artworks</a>
+                    </div>
+                </div>
+                 <div class="artist-profile-card" id="artist-david-l" data-artist-id="artist006">
+                    <img src="images/artist_profile_placeholder_6.png" alt="David L."> <div class="artist-info">
+                        <h3>David L.</h3>
+                        <p class="artist-specialty">Street Art & Murals</p>
+                        <p class="artist-bio-summary">David brings vibrant energy to urban spaces with his large-scale murals and socially conscious street art. Johannesburg, South Africa.</p>
+                        <a href="gallery.html?artist=davidl" class="link-styled">View Artworks</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="join-community-actions page-width text-center">
+            <h2>Connect & Grow With Us</h2>
+            <p>Are you an artist looking to showcase your work, or a member wanting to manage your profile?</p>
+            <div class="button-group">
+                <button id="openJoinCommunityModalBtn" class="cta-button">Submit Your Portfolio</button>
+                <a href="login.html" class="cta-button-secondary">Member Login / Edit Profile</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page-width">
+            <p>&copy; <span id="currentYearCommunity"></span> enzArts. All Rights Reserved.</p>
+            <p>kenzartgallery.com</p>
+        </div>
+    </footer>
+
+    <div id="joinCommunityModal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="close-modal-btn" id="closeJoinModalBtn" aria-label="Close modal">&times;</button>
+            <h2>Join Our Artist Community</h2>
+            <form id="joinCommunityForm" action="YOUR_JOIN_FORM_ENDPOINT" method="POST" enctype="multipart/form-data">
+                <p>We're excited to learn about your art! Please fill out the form below.</p>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="joinFullName">Full Name:</label>
+                        <input type="text" id="joinFullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="joinEmail">Email Address:</label>
+                        <input type="email" id="joinEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="joinPhone">Telephone Number:</label>
+                        <input type="tel" id="joinPhone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="joinCountry">Country:</label>
+                        <input type="text" id="joinCountry" name="country" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="joinBio">Short Bio / Artist Statement (max 500 words):</label>
+                    <textarea id="joinBio" name="bio" rows="5" required maxlength="2500"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="joinPortfolioImages">Portfolio Images (up to 5 images, JPG/PNG, max 2MB each):</label>
+                    <input type="file" id="joinPortfolioImages" name="portfolioImages[]" multiple accept="image/jpeg, image/png">
+                </div>
+                <div class="form-group">
+                    <label for="joinPortfolioLink">Link to Online Portfolio (e.g., personal website, Instagram):</label>
+                    <input type="url" id="joinPortfolioLink" name="portfolioLink" placeholder="https://example.com">
+                </div>
+                 <div class="form-group">
+                    <label for="joinPortfolioVideos">Link to Portfolio Video (e.g., YouTube, Vimeo - optional):</label>
+                    <input type="url" id="joinPortfolioVideos" name="portfolioVideoLink" placeholder="https://">
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="joinPolicy" name="policyAccepted" value="accepted" required>
+                    <label for="joinPolicy">I have read and accept the <a href="privacy_policy.html" target="_blank">Privacy Policy</a>.</label>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="joinTerms" name="termsAccepted" value="accepted" required>
+                    <label for="joinTerms">I have read and agree to the <a href="terms_conditions.html" target="_blank">Artist Submission Terms & Conditions</a>.</label>
+                </div>
+                <button type="submit" class="cta-button">Submit Application</button>
+                <p id="joinFormStatus" class="form-status-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <a href="https://wa.me/YOURPHONENUMBER?text=Hello%20Kenz%20Art%20Gallery!" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <img src="images/whatsapp-icon.svg" alt="WhatsApp">
+    </a>
+    <script src='js/script.js'></script>
+</body>
+</html>

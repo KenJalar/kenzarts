@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Artwork Title - enzArts</title> <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Detailed view of [Artwork Title]. Medium, dimensions, artist information, and purchase inquiry.">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container page-width">
+             <a href="home.html" class="logo-link" alt="Kenz Art Gallery Logo">enz<span>arts</span></a>
+            
+            <nav id="main-nav">
+                <ul class="nav-pages">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li> <li><a href="about.html">About</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="search-icon-container">
+    <img src="search.png" alt="Search" id="search-icon" style="width: 24px; height: 24px; cursor:pointer;">
+</li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-trigger">
+                <img src="search.png" alt="Search" id="mobile-search-icon-trigger">
+                <img src="menu.png" alt="Menu" id="hamburger-icon">
+            </div>
+        </div>
+        <div id="search-bar-container" class="search-bar-hidden">
+            <input type="search" id="site-search-input" placeholder="Search Kenz Arts...">
+            <button id="close-search-btn">X</button>
+        </div>
+    </header>
+
+    <main class="page-width">
+        <section class="artwork-detail-section">
+            <div class="artwork-image-viewer">
+                <img src="images/art_gallery_1_large.jpg" alt="Artwork Title 1 - Large View" id="mainArtImageLarge">
+                <div class="detail-thumbnails" id="detailThumbnailsContainer">
+                    </div>
+            </div>
+            <div class="artwork-info">
+                <h1 id="artTitleDetail">Artwork Title (Dynamic)</h1>
+                <p class="artist-name-detail">By <a href="community.html#artist-name-1" id="artArtistNameDetail">Artist Name (Dynamic)</a></p>
+                <p class="art-price-detail" id="artPriceDetail">$0 (Dynamic)</p>
+
+                <div class="art-specifications">
+                    <p><strong>Medium:</strong> <span id="artMediumDetail">Oil on Canvas</span></p>
+                    <p><strong>Dimensions:</strong> <span id="artDimensionsDetail">24" x 36"</span></p>
+                    <p><strong>Year:</strong> <span id="artYearDetail">2023</span></p>
+                </div>
+
+                <p id="artDescriptionDetail">Detailed description of the artwork... (Dynamic)</p>
+                 <div class="interactions-section-detail">
+                    <h4>Interactions</h4>
+                     <div class="like-dislike-buttons">
+                        <button id="likeBtnDetail" class="interaction-btn"><img src="images/like-icon.svg" alt="Like"> (<span id="likeCountDetail">0</span>)</button>
+                        <button id="dislikeBtnDetail" class="interaction-btn"><img src="images/dislike-icon.svg" alt="Dislike"> (<span id="dislikeCountDetail">0</span>)</button>
+                    </div>
+                    <h4>Comments (<span id="commentCountDetail">0</span>)</h4>
+                    <div id="commentsDisplayDetail" class="comments-display-area">
+                        </div>
+                    <div class="add-comment-area">
+                        <textarea id="newCommentTextDetail" placeholder="Add your comment..." rows="3"></textarea>
+                        <button id="postCommentBtnDetail" class="cta-button-secondary">Post Comment</button>
+                    </div>
+                </div>
+                <a href="contact.html?subject=Inquiry%20about%20Artwork%20(Dynamic)" class="cta-button" id="inquireButtonDetail">Inquire About This Piece</a>
+            </div>
+        </section>
+
+        <section class="related-artworks">
+            <h2>You Might Also Like</h2>
+            <div class="art-grid" id="relatedArtGrid">
+                <div class="art-card"> <a href="art_piece_detail.html?id=art002" class="art-card-link">
+                        <img src="images/art_gallery_2.jpg" alt="Artwork Title 2">
+                        <div class="art-card-info">
+                            <h3>Artwork Title 2</h3>
+                            <p class="artist-name">By Artist Name 2</p>
+                            <p class="art-price">$850</p>
+                        </div>
+                    </a>
+                     <button class="cta-button" onclick="location.href='art_piece_detail.html?id=art002'">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page-width">
+            <p>&copy; <span id="currentYearDetail"></span> Kenz Art Gallery. All Rights Reserved.</p>
+            <p>kenzartgallery.com</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/YOURPHONENUMBER?text=Hello%20Kenz%20Art%20Gallery!" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <img src="images/whatsapp-icon.svg" alt="WhatsApp">
+    </a>
+    <script src='js/script.js'></script>
+    </body>
+</html>

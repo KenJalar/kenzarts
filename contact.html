@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Us - enzArts</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Get in touch with enzArts for inquiries, support, or artist submissions.">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    </head>
+<body>
+    <header class="header">
+        <div class="nav-container page-width">
+            <a href="home.html" class="logo-link" alt="enzArts Logo">enz<span>arts</span></a>
+            <nav id="main-nav">
+                <ul class="nav-pages">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li id="search-icon-container">
+    <img src="search.png" alt="Search" id="search-icon" style="width: 24px; height: 24px; cursor:pointer;">
+</li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-trigger">
+                <img src="search.png" alt="Search" id="mobile-search-icon-trigger">
+                <img src="menu.png" alt="Menu" id="hamburger-icon">
+            </div>
+        </div>
+        <div id="search-bar-container" class="search-bar-hidden">
+            <input type="search" id="site-search-input" placeholder="Search Kenz Arts...">
+            <button id="close-search-btn">X</button>
+        </div>
+    </header>
+
+    <main class="page-width">
+        <section class="contact-section">
+            <h1>Get in Touch</h1>
+            <p class="contact-intro">We'd love to hear from you! Whether you have a question about an artwork, an artist submission, press inquiries, or just want to say hello, please reach out using the form below or our contact details.</p>
+
+            <div class="contact-layout-container">
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" action="YOUR_FORM_SUBMISSION_ENDPOINT_CONTACT" method="POST">
+                        <div class="form-group">
+                            <label for="contactName">Full Name:</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address:</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject:</label>
+                            <input type="text" id="contactSubject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message:</label>
+                            <textarea id="contactMessage" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                        <p id="contactFormStatus" class="form-status-message"></p>
+                    </form>
+                </div>
+
+                <div class="contact-details-container">
+                    <h2>Our Details</h2>
+                    <p><strong>enzArts</strong></p>
+                    <address>
+                        123 Art Street, Kololo<br>
+                        Kampala, Uganda
+                    </address>
+                    <p><strong>Phone:</strong> <a href="tel:+25677XXXXXXX">+256 77X XXX XXX</a></p> <p><strong>Email:</strong> <a href="mailto:info@kenzartgallery.com">info@kenzartgallery.com</a></p>
+
+                    <h3>Gallery Hours:</h3>
+                    <p>Tuesday - Saturday: 10:00 AM - 6:00 PM (EAT)</p>
+                    <p>Sunday: 12:00 PM - 4:00 PM (EAT)</p>
+                    <p>Monday & Public Holidays: Closed</p>
+
+                    <h3>Connect With Us:</h3>
+                     <div class="social-links-contact">
+                        <a href="#" aria-label="Facebook" target="_blank"><img src="images/facebook_icon.png" alt="Facebook"></a>
+                        <a href="#" aria-label="Instagram" target="_blank"><img src="images/instagram_icon.png" alt="Instagram"></a>
+                        <a href="#" aria-label="Twitter" target="_blank"><img src="images/twitter_icon.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container section-spacing-top">
+                 <h2>Find Us</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.01949208275!2d32.51292388671875!3d0.3130637000000062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbd0f5b683999%3A0xdf36a732c3167608!2sKololo%2C%20Kampala!5e0!3m2!1sen!2sug!4v1716312985345!5m2!1sen!2sug"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Gallery Location Map"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="page-width">
+            <p>&copy; <span id="currentYearContact"></span> enzArts. All Rights Reserved.</p>
+            <p>kenzartgallery.com</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/YOURPHONENUMBER?text=Hello%20Kenz%20Art%20Gallery!" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <img src="images/whatsapp-icon.svg" alt="WhatsApp">
+    </a>
+    <script src='js/script.js'></script>
+</body>
+</html>
